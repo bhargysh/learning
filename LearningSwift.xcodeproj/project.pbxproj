@@ -8,7 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		99B7EC30203E65AB00E02130 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B7EC2F203E65AB00E02130 /* main.swift */; };
+		99C063C420F48BB4009FE835 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C063C320F48BB4009FE835 /* XCTest.framework */; };
+		99C063CC20F48C6F009FE835 /* LearningSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C063CB20F48C6F009FE835 /* LearningSwiftTests.swift */; };
+		99C063D120F48C8E009FE835 /* ResponseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C063C020F48B59009FE835 /* ResponseTest.swift */; };
+		99C063DD20F48F1C009FE835 /* LearningSwiftCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 99C063DC20F48F1C009FE835 /* LearningSwiftCore.h */; };
+		99C063DF20F48F1C009FE835 /* LearningSwiftCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C063DE20F48F1C009FE835 /* LearningSwiftCore.m */; };
+		99C063E520F48F39009FE835 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C063D220F48DC6009FE835 /* Response.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99C063E320F48F2D009FE835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99B7EC24203E65AB00E02130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99C063D920F48F1C009FE835;
+			remoteInfo = LearningSwiftCore;
+		};
+		99C063E620F49068009FE835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99B7EC24203E65AB00E02130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99C063D920F48F1C009FE835;
+			remoteInfo = LearningSwiftCore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		99B7EC2A203E65AB00E02130 /* CopyFiles */ = {
@@ -25,10 +48,34 @@
 /* Begin PBXFileReference section */
 		99B7EC2C203E65AB00E02130 /* LearningSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearningSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B7EC2F203E65AB00E02130 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		99C063C020F48B59009FE835 /* ResponseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTest.swift; sourceTree = "<group>"; };
+		99C063C320F48BB4009FE835 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		99C063C920F48C6F009FE835 /* LearningSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C063CB20F48C6F009FE835 /* LearningSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftTests.swift; sourceTree = "<group>"; };
+		99C063CD20F48C6F009FE835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99C063D220F48DC6009FE835 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		99C063DA20F48F1C009FE835 /* libLearningSwiftCore.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libLearningSwiftCore.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C063DC20F48F1C009FE835 /* LearningSwiftCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearningSwiftCore.h; sourceTree = "<group>"; };
+		99C063DE20F48F1C009FE835 /* LearningSwiftCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearningSwiftCore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		99B7EC29203E65AB00E02130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C063C420F48BB4009FE835 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C063C620F48C6F009FE835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C063D720F48F1C009FE835 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				99B7EC2E203E65AB00E02130 /* LearningSwift */,
+				99C063CA20F48C6F009FE835 /* LearningSwiftTests */,
+				99C063DB20F48F1C009FE835 /* LearningSwiftCore */,
 				99B7EC2D203E65AB00E02130 /* Products */,
+				99C063C220F48BB4009FE835 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				99B7EC2C203E65AB00E02130 /* LearningSwift */,
+				99C063C920F48C6F009FE835 /* LearningSwiftTests.xctest */,
+				99C063DA20F48F1C009FE835 /* libLearningSwiftCore.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +114,46 @@
 			path = LearningSwift;
 			sourceTree = "<group>";
 		};
+		99C063C220F48BB4009FE835 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99C063C320F48BB4009FE835 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99C063CA20F48C6F009FE835 /* LearningSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				99C063CB20F48C6F009FE835 /* LearningSwiftTests.swift */,
+				99C063C020F48B59009FE835 /* ResponseTest.swift */,
+				99C063CD20F48C6F009FE835 /* Info.plist */,
+			);
+			path = LearningSwiftTests;
+			sourceTree = "<group>";
+		};
+		99C063DB20F48F1C009FE835 /* LearningSwiftCore */ = {
+			isa = PBXGroup;
+			children = (
+				99C063D220F48DC6009FE835 /* Response.swift */,
+				99C063DC20F48F1C009FE835 /* LearningSwiftCore.h */,
+				99C063DE20F48F1C009FE835 /* LearningSwiftCore.m */,
+			);
+			path = LearningSwiftCore;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		99C063D820F48F1C009FE835 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C063DD20F48F1C009FE835 /* LearningSwiftCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		99B7EC2B203E65AB00E02130 /* LearningSwift */ = {
@@ -76,11 +167,47 @@
 			buildRules = (
 			);
 			dependencies = (
+				99C063E720F49068009FE835 /* PBXTargetDependency */,
 			);
 			name = LearningSwift;
 			productName = LearningSwift;
 			productReference = 99B7EC2C203E65AB00E02130 /* LearningSwift */;
 			productType = "com.apple.product-type.tool";
+		};
+		99C063C820F48C6F009FE835 /* LearningSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99C063CE20F48C6F009FE835 /* Build configuration list for PBXNativeTarget "LearningSwiftTests" */;
+			buildPhases = (
+				99C063C520F48C6F009FE835 /* Sources */,
+				99C063C620F48C6F009FE835 /* Frameworks */,
+				99C063C720F48C6F009FE835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99C063E420F48F2D009FE835 /* PBXTargetDependency */,
+			);
+			name = LearningSwiftTests;
+			productName = LearningSwiftTests;
+			productReference = 99C063C920F48C6F009FE835 /* LearningSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99C063D920F48F1C009FE835 /* LearningSwiftCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99C063E020F48F1C009FE835 /* Build configuration list for PBXNativeTarget "LearningSwiftCore" */;
+			buildPhases = (
+				99C063D620F48F1C009FE835 /* Sources */,
+				99C063D720F48F1C009FE835 /* Frameworks */,
+				99C063D820F48F1C009FE835 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearningSwiftCore;
+			productName = LearningSwiftCore;
+			productReference = 99C063DA20F48F1C009FE835 /* libLearningSwiftCore.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -88,12 +215,20 @@
 		99B7EC24203E65AB00E02130 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Bharg Sharma";
 				TargetAttributes = {
 					99B7EC2B203E65AB00E02130 = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					99C063C820F48C6F009FE835 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
+					99C063D920F48F1C009FE835 = {
+						CreatedOnToolsVersion = 9.4.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -111,9 +246,21 @@
 			projectRoot = "";
 			targets = (
 				99B7EC2B203E65AB00E02130 /* LearningSwift */,
+				99C063C820F48C6F009FE835 /* LearningSwiftTests */,
+				99C063D920F48F1C009FE835 /* LearningSwiftCore */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99C063C720F48C6F009FE835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99B7EC28203E65AB00E02130 /* Sources */ = {
@@ -124,7 +271,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99C063C520F48C6F009FE835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C063D120F48C8E009FE835 /* ResponseTest.swift in Sources */,
+				99C063CC20F48C6F009FE835 /* LearningSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C063D620F48F1C009FE835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C063E520F48F39009FE835 /* Response.swift in Sources */,
+				99C063DF20F48F1C009FE835 /* LearningSwiftCore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99C063E420F48F2D009FE835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99C063D920F48F1C009FE835 /* LearningSwiftCore */;
+			targetProxy = 99C063E320F48F2D009FE835 /* PBXContainerItemProxy */;
+		};
+		99C063E720F49068009FE835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99C063D920F48F1C009FE835 /* LearningSwiftCore */;
+			targetProxy = 99C063E620F49068009FE835 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		99B7EC31203E65AB00E02130 /* Debug */ = {
@@ -251,6 +429,70 @@
 			};
 			name = Release;
 		};
+		99C063CF20F48C6F009FE835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LearningSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LearningSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		99C063D020F48C6F009FE835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LearningSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LearningSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		99C063E120F48F1C009FE835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		99C063E220F48F1C009FE835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +510,24 @@
 			buildConfigurations = (
 				99B7EC34203E65AB00E02130 /* Debug */,
 				99B7EC35203E65AB00E02130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99C063CE20F48C6F009FE835 /* Build configuration list for PBXNativeTarget "LearningSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99C063CF20F48C6F009FE835 /* Debug */,
+				99C063D020F48C6F009FE835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99C063E020F48F1C009FE835 /* Build configuration list for PBXNativeTarget "LearningSwiftCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99C063E120F48F1C009FE835 /* Debug */,
+				99C063E220F48F1C009FE835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
